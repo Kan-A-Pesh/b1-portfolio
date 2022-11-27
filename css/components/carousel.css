@@ -1,0 +1,15 @@
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-gradient {
+    bottom: 0;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0) 100%);
+}

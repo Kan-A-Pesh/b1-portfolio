@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kan-à-Pesh • Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-plus.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/modal.js" defer></script>
+</head>
+
+<body>
+    <!-- Carousel -->
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active vh-90">
+                <img src="./img/carousel/1.png" class="position-absolute carousel-image" alt="Scène Fantaisie">
+                <div class="position-absolute carousel-gradient"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Scène fantaisie</h1>
+                    <p>Texturing & Rendu 3D</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-90">
+                <img src="./img/carousel/2.png" class="position-absolute carousel-image" alt="Scène d'architecte">
+                <div class="position-absolute carousel-gradient"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Scène d'architecte</h1>
+                    <p>Texturing & Rendu 3D</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-90">
+                <img src="./img/carousel/3.png" class="position-absolute carousel-image" alt="Affiche Marketing">
+                <div class="position-absolute carousel-gradient"></div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Affiche Marketing</h1>
+                    <p>Créé pour une campagne publicitaire des Secours Populaires Francais</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0 z-index-10">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Kan-à-Pesh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">A propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cdeb">CDEB (Section Flex)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blender">Blender (Section Grid)</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#figma">Figma (Section Bootstrap)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <div class="title-texts">
+            <h1 class="title title-blue">
+                A propos
+            </h1>
+            <div class="subtitle">
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+                <h2>QUI SUIS-JE ?</h2>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <img src="./img/me.jpg" alt="Photo de moi">
+            <div class="texts">
+                <h3 class="text-gradient">Michel Moccand-Jacquet</h3>
+                <p>Étudiant à l'IIM Digital School (Paris)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CDEB -->
+    <section id="cdeb">
+
+        <div class="title-texts">
+            <h1 class="title title-purple">
+                Projet CDEB
+            </h1>
+            <div class="subtitle">
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+                <h2>AFFICHE DE PUB D'UNE</h2>
+            </div>
+        </div>
+
+
+        <div class="cdeb-card">
+            <div>
+                <img src="./img/cdeb/SPF_Bapt.png" alt="Kan-à-Pesh">
+            </div>
+            <div class="bg right-bg">
+                <h2>Affiche de Baptiste</h2>
+                <button class="button" type="button" modal-target="baptModal">
+                    <p>Voir en plein écran</p>
+                </button>
+            </div>
+        </div>
+        <div class="cdeb-card">
+            <div>
+                <img src="./img/cdeb/SPF_Louca.png" alt="Kan-à-Pesh">
+            </div>
+            <div class="bg left-bg">
+                <h2>Affiche de Louca</h2>
+                <button class="button" type="button" modal-target="loucaModal">
+                    <p>Voir en plein écran</p>
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal BAPTISTE -->
+        <div class="my-modal" id="baptModal">
+            <div class="content">
+                <div class="body">
+                    <img src="./img/cdeb/SPF_Bapt.png" alt="Affiche de Baptiste">
+                </div>
+                <div class="footer">
+                    <h2>Affiche de Baptiste</h2>
+                    <button type="button" class="btn-close"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal LOUCA -->
+        <div class="my-modal" id="loucaModal">
+            <div class="content">
+                <div class="body">
+                    <img src="./img/cdeb/SPF_Louca.png" alt="Affiche de Louca">
+                </div>
+                <div class="footer">
+                    <h2>Affiche de Louca</h2>
+                    <button type="button" class="btn-close"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blender -->
+    <section id="blender">
+        <div class="title-texts">
+            <h1 class="title title-pink">
+                Projet 3D
+            </h1>
+            <div class="subtitle">
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+                <h2>EST FAIT SUR BLENDER</h2>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="✍️">
+                <h3>// Rendus 3D</h3>
+            </div>
+            <div>
+                <img src="./img/3d/shield.png" alt="Rendu Bouclier">
+                <h3>Bouclier</h3>
+            </div>
+            <div>
+                <img src="./img/3d/Scene.png" alt="Rendu Scene Ortho">
+                <h3>Scène Fantaisie</h3>
+            </div>
+            <div class="large">
+                <img src="./img/3d/Archi.png" alt="Rendu Scene Archi">
+                <h3>Scène Architecte</h3>
+            </div>
+            <div>
+                <video src="./img/3d/lumiere.mp4" autoplay muted loop></video>
+                <h3>Lumière<br>(La Belle et la Bête)</h3>
+            </div>
+            <div>
+                <img src="./img/3d/scenef.png" alt="Rendu Scene Fantaisie">
+                <h3>Intérieur Fantaisie</h3>
+            </div>
+            <div>
+                <img src="./img/3d/sword.png" alt="Rendu Epée">
+                <h3>Épée</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Figma -->
+    <section id="figma">
+
+        <div class="title-texts">
+            <h1 class="title title-red">
+                Projet Figma
+            </h1>
+            <div class="subtitle">
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+                <h2>APPLICATION DE MUSIQUE</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <h2>Description</h2>
+                    <p class="h4">
+                        Une application de musique qui permet de créer des playlists, de les partager et de les écouter.
+                        Tout en étant dans le thème du groupe de musique imposé.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <h2>Block Party</h2>
+                    <p class="h4">
+                        Le groupe de musique imposé est Block Party.
+                        Leur style est le rock alternatif.
+                    </p>
+                </div>
+            </div>
+            <img src="img/figma/figma.png" alt="Figma" width="100%">
+        </div>
+    </section>
+</body>
+
+</html>

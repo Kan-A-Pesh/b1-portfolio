@@ -1,0 +1,93 @@
+.title-texts {
+    position: relative;
+    padding-bottom: 50px;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+.title-blue {
+    --shadow-color: rgb(52, 73, 255);
+}
+
+.title-purple {
+    --shadow-color: rgb(134, 12, 182);
+}
+
+.title-pink {
+    --shadow-color: rgb(165, 9, 69);
+}
+
+.title-red {
+    --shadow-color: rgb(187, 22, 16);
+}
+
+.title {
+    margin-left: 5vw;
+    font-size: 128px;
+    font-weight: bold;
+
+    color: white;
+
+    text-shadow: 3px 0 var(--shadow-color),
+        0 3px var(--shadow-color),
+        -3px 0 var(--shadow-color),
+        0 -3px var(--shadow-color);
+
+    animation: fade-in 2.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    z-index: 10;
+}
+
+.subtitle {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    gap: 15px;
+}
+
+.subtitle>h2 {
+    font-size: 64px;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    animation: title-loop 5s linear 0s infinite;
+    z-index: 5;
+}
+
+@keyframes title-loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 15px));
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        padding-left: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        padding-left: 0px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 64px;
+    }
+
+    .subtitle>h2 {
+        font-size: 32px;
+    }
+
+    .title-texts {
+        padding-bottom: 25px;
+    }
+}
